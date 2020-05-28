@@ -8,7 +8,7 @@ public class HelloController {
 
     @RequestMapping("")
     public String index() {
-        return "Greetings from Spring Boot Corcelli V5!";
+        return "Greetings from Spring Boot Corcelli V6!";
     }
 
 }
