@@ -1,0 +1,22 @@
+# Action name
+name: Super Action
+
+# Here, this action will be enabled on all pushes.
+# Modify this to fit your needs.
+on:
+    push
+
+# Jobs section
+jobs:
+    # The job that will use the container image you just pushed to ghcr.io
+    super-job:
+        runs-on: openjdk:8-jdk-alpine
+        container:
+            image: http://3.134.249.84:5000/javaspringboot
+        steps:
+            - name: super-step
+              shell: bash
+              run: |
+                # Whatever commands you want to run here using the container with your
+                # new Docker image at ghcr.io!>
+                echo "--This is running in my custom Docker image--"
