@@ -10,7 +10,7 @@ on:
 jobs:
     # The job that will use the container image you just pushed to ghcr.io
     super-job:
-        runs-on: openjdk:8-jdk-alpine
+        runs-on: ubuntu-18.04
         container:
             image: http://3.134.249.84:5000/javaspringboot
         steps:
