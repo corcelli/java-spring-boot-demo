@@ -72,5 +72,5 @@ jobs:
           echo IMAGE_ID=$IMAGE_ID
           echo VERSION=$VERSION
 
-          docker tag $IMAGE_NAME 3.134.249.84:5000/$IMAGE_NAME
-          docker push 3.134.249.84:5000/$IMAGE_NAME:$IMAGE_NAME
+          docker tag $IMAGE_NAME qa.viajecomtai.com.br/$IMAGE_NAME
+          docker push qa.viajecomtai.com.br/$IMAGE_NAME:$IMAGE_NAME
