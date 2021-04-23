@@ -73,4 +73,4 @@ jobs:
           echo VERSION=$VERSION
 
           docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
-          docker push 3.134.249.84:5000/$IMAGE_ID:$VERSION
+          docker push 3.134.249.84:5000/$IMAGE_NAME:$VERSION
